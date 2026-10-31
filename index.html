@@ -2,16 +2,16 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#102f3b">
-<title>Pokémon: Leyendas de Astur · v10.0</title>
+<title>Pokémon: Leyendas de Astur · v11.0</title>
 <style>
-:root{--navy:#102f3b;--deep:#09232d;--teal:#1d6470;--cream:#f5efd9;--gold:#efc66c;--ink:#183942;--mint:#cce5d0}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(ellipse at top,#235563,#0a2630 72%);color:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overscroll-behavior:none}body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}main{max-width:1180px;margin:auto;padding:12px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:4px 2px 12px}h1{font-size:clamp(22px,4vw,34px);line-height:1.05;margin:0;letter-spacing:.2px;text-shadow:0 3px 0 #071b22}header p{margin:5px 0 0;color:#c8e2dc;font-size:13px}.version{background:#e9c66d;color:#273e3a;border-radius:30px;padding:6px 11px;font-size:11px;font-weight:900;letter-spacing:.5px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:12px}.panel{background:var(--cream);color:var(--ink);border:3px solid #38666a;border-radius:14px;padding:10px;box-shadow:0 5px 0 #061a21,0 10px 24px #061a2144}.game-panel{padding:9px}.screen-wrap{position:relative;overflow:hidden;border:3px solid #234e55;border-radius:9px;background:#7dbb83}canvas{display:block;width:100%;height:auto;aspect-ratio:640/448;image-rendering:pixelated;touch-action:none;user-select:none;-webkit-user-select:none}.hud{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:#d8eee5;font-size:11px;font-weight:800;padding:7px 2px 0}.controls{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:10px}.dpad{display:grid;grid-template-columns:46px 46px 46px;grid-template-rows:40px 40px 40px;gap:3px;touch-action:manipulation}.dpad button{padding:0;font-size:18px}.up{grid-column:2}.left{grid-column:1;grid-row:2}.down{grid-column:2;grid-row:2}.right{grid-column:3;grid-row:2}.action-buttons{display:flex;gap:7px;flex-wrap:wrap;justify-content:center}button{border:0;border-radius:9px;background:linear-gradient(#2b7580,#1b5662);color:white;font-weight:850;font-size:13px;padding:11px 13px;box-shadow:0 3px 0 #10343c;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;cursor:pointer}button:active{transform:translateY(2px);box-shadow:0 1px 0 #10343c}button.secondary{background:linear-gradient(#e6eddf,#cbdcc9);color:#183942;box-shadow:0 3px 0 #93aa9a}button.gold{background:linear-gradient(#f4d783,#d8a943);color:#3c3825;box-shadow:0 3px 0 #a17a30}.side{display:flex;flex-direction:column;gap:10px}.side h2{font-size:14px;margin:0 0 7px;color:#17434b;letter-spacing:.3px}.small{font-size:12px;line-height:1.5}.statline{display:flex;justify-content:space-between;border-bottom:1px solid #d7d8c8;padding:4px 0}.teamrow{display:flex;justify-content:space-between;gap:5px;border-bottom:1px solid #d7d8c8;padding:6px 0;font-size:11px}.teamrow:last-child{border:0}.log{background:#fff9e9;border:1px solid #e2d9bb;border-radius:8px;padding:9px;min-height:68px;font-size:12px;line-height:1.45}.progressbar{height:8px;background:#d3d9ca;border-radius:8px;overflow:hidden;margin-top:5px}.progressbar i{display:block;height:100%;background:#4c9a68}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.quick button{padding:9px 5px;font-size:11px}.modal{display:none;position:fixed;inset:0;z-index:20;background:#061820eF;align-items:center;justify-content:center;padding:14px}.modal.show{display:flex}.dialog{width:min(600px,100%);max-height:92dvh;overflow:auto;background:var(--cream);color:var(--ink);border:4px solid #37666b;border-radius:16px;padding:16px;box-shadow:0 15px 50px #0008}.dialog h2{font-size:21px;margin:0 0 7px}.dialog p{font-size:13px;line-height:1.5}.startergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.startergrid button{background:#e4eddf;color:#173b40;border:2px solid #a9c3aa;box-shadow:none;padding:12px 5px}.startergrid .emoji{display:block;font-size:38px}.startergrid b{display:block;margin:4px 0}.startergrid small{font-size:11px}.battlefield{position:relative;overflow:hidden;min-height:250px;border:3px solid #365e59;border-radius:11px;padding:14px;background:linear-gradient(#9bd0d0 0 48%,#b4d69c 48% 62%,#79ae70 62%);display:flex;flex-direction:column;justify-content:space-between}.battlefield:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 18% 48%,#fff8 0 2%,transparent 3%),linear-gradient(135deg,transparent 45%,#ffffff20 46% 47%,transparent 48%);pointer-events:none}.mon{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px}.mon.enemy{padding-left:8px}.mon.hero{padding:0 10px 0 0}
-.pixel-creature{width:104px;height:88px;image-rendering:pixelated;filter:drop-shadow(3px 5px 0 #233b3b55);animation:spriteFloat 2.4s ease-in-out infinite}
+:root{--navy:#102f3b;--deep:#09232d;--teal:#1d6470;--cream:#f5efd9;--gold:#efc66c;--ink:#183942;--mint:#cce5d0}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(ellipse at top,#235563,#0a2630 72%);color:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overscroll-behavior:none}body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}main{max-width:1180px;margin:auto;padding:12px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:4px 2px 12px}h1{font-size:clamp(22px,4vw,34px);line-height:1.05;margin:0;letter-spacing:.2px;text-shadow:0 3px 0 #071b22}header p{margin:5px 0 0;color:#c8e2dc;font-size:13px}.version{background:#e9c66d;color:#273e3a;border-radius:30px;padding:6px 11px;font-size:11px;font-weight:900;letter-spacing:.5px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:12px}.panel{background:var(--cream);color:var(--ink);border:3px solid #38666a;border-radius:14px;padding:10px;box-shadow:0 5px 0 #061a21,0 10px 24px #061a2144}.game-panel{padding:9px}.screen-wrap{position:relative;overflow:hidden;border:3px solid #234e55;border-radius:9px;background:#7dbb83}canvas{display:block;width:100%;height:auto;aspect-ratio:640/448;image-rendering:pixelated;touch-action:none;user-select:none;-webkit-user-select:none}.hud{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:#d8eee5;font-size:11px;font-weight:800;padding:7px 2px 0}.controls{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:10px}.dpad{display:grid;grid-template-columns:46px 46px 46px;grid-template-rows:40px 40px 40px;gap:3px;touch-action:manipulation}.dpad button{padding:0;font-size:18px}.up{grid-column:2}.left{grid-column:1;grid-row:2}.down{grid-column:2;grid-row:2}.right{grid-column:3;grid-row:2}.action-buttons{display:flex;gap:7px;flex-wrap:wrap;justify-content:center}button{border:0;border-radius:9px;background:linear-gradient(#2b7580,#1b5662);color:white;font-weight:850;font-size:13px;padding:11px 13px;box-shadow:0 3px 0 #10343c;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;cursor:pointer}button:active{transform:translateY(2px);box-shadow:0 1px 0 #10343c}button.secondary{background:linear-gradient(#e6eddf,#cbdcc9);color:#183942;box-shadow:0 3px 0 #93aa9a}button.gold{background:linear-gradient(#f4d783,#d8a943);color:#3c3825;box-shadow:0 3px 0 #a17a30}.side{display:flex;flex-direction:column;gap:10px}.side h2{font-size:14px;margin:0 0 7px;color:#17434b;letter-spacing:.3px}.small{font-size:12px;line-height:1.5}.statline{display:flex;justify-content:space-between;border-bottom:1px solid #d7d8c8;padding:4px 0}.teamrow{display:flex;justify-content:space-between;gap:5px;border-bottom:1px solid #d7d8c8;padding:6px 0;font-size:11px}.teamrow:last-child{border:0}.log{background:#fff9e9;border:1px solid #e2d9bb;border-radius:8px;padding:9px;min-height:68px;font-size:12px;line-height:1.45}.progressbar{height:8px;background:#d3d9ca;border-radius:8px;overflow:hidden;margin-top:5px}.progressbar i{display:block;height:100%;background:#4c9a68}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.quick button{padding:9px 5px;font-size:11px}.modal{display:none;position:fixed;inset:0;z-index:20;background:#061820eF;align-items:center;justify-content:center;padding:14px}.modal.show{display:flex}.dialog{width:min(600px,100%);max-height:92dvh;overflow:auto;background:var(--cream);color:var(--ink);border:4px solid #37666b;border-radius:16px;padding:16px;box-shadow:0 15px 50px #0008}.dialog h2{font-size:21px;margin:0 0 7px}.dialog p{font-size:13px;line-height:1.5}.startergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.startergrid button{background:#e4eddf;color:#173b40;border:2px solid #a9c3aa;box-shadow:none;padding:12px 5px}.startergrid .emoji{display:block;font-size:38px;min-height:76px}.startergrid .emoji .pixel-creature{width:88px;height:76px;filter:none;animation:none}.startergrid b{display:block;margin:4px 0}.startergrid small{font-size:11px}.battlefield{position:relative;overflow:hidden;min-height:250px;border:3px solid #365e59;border-radius:11px;padding:14px;background:linear-gradient(#9bd0d0 0 48%,#b4d69c 48% 62%,#79ae70 62%);display:flex;flex-direction:column;justify-content:space-between}.battlefield:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 18% 48%,#fff8 0 2%,transparent 3%),linear-gradient(135deg,transparent 45%,#ffffff20 46% 47%,transparent 48%);pointer-events:none}.mon{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px}.mon.enemy{padding-left:8px}.mon.hero{padding:0 10px 0 0}
+.pixel-creature{width:120px;height:104px;image-rendering:pixelated;filter:drop-shadow(3px 5px 0 #233b3b55);animation:spriteFloat 2.4s ease-in-out infinite}
 .sprite{font-size:clamp(50px,10vw,76px);animation:spriteFloat 2.4s ease-in-out infinite;filter:drop-shadow(3px 5px 0 #233b3b55);line-height:1}.moninfo{background:#f8f2dcdd;border:2px solid #476b5d;border-radius:9px;padding:7px 9px;min-width:145px;font-size:12px}.hpwrap{height:9px;background:#9ca99a;border:1px solid #52665a;border-radius:8px;overflow:hidden;margin-top:4px}.hp{height:100%;width:100%;background:#54a65e;transition:width .25s}.moves{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.moves button{background:#e4eddf;color:#173b40;border:2px solid #adc4a8;box-shadow:none;text-align:left}.moves button small{display:block;font-weight:500;font-size:10px}.battle-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:9px}.dexlist{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.dexitem{display:flex;align-items:center;gap:8px;background:#fff9e9;border:1px solid #ddd6bd;border-radius:8px;padding:8px;font-size:12px}.dexitem span{font-size:26px}.notice{font-size:11px;color:#55716b;margin-top:8px}.close{float:right;background:#dce7d9;color:#1c454b;box-shadow:none;padding:7px 10px}@media(max-width:800px){main{padding:9px}.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr}.side .wide{grid-column:1/-1}.controls{justify-content:space-around}.action-buttons{max-width:55%}}@media(max-width:430px){.side{grid-template-columns:1fr 1fr}.dpad{grid-template-columns:40px 40px 40px;grid-template-rows:36px 36px 36px}.action-buttons{max-width:52%}.action-buttons button{padding:10px 9px;font-size:11px}.startergrid{gap:5px}.startergrid .emoji{font-size:31px}.dialog{padding:12px}.moninfo{min-width:125px}.battlefield{min-height:220px}}
 @keyframes spriteFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes hitFlash{0%,100%{filter:none}50%{filter:brightness(2) saturate(1.5)}}.battlefield{background-image:radial-gradient(ellipse at 75% 35%,#ffffff55 0 4%,transparent 5%),linear-gradient(#a9d8dc 0 45%,#c5dda7 45% 62%,#78ae70 62%)}button:focus-visible{outline:3px solid #f1c96b;outline-offset:3px}.version{box-shadow:0 2px 0 #987632}</style></head>
 <body><main>
-<header><div><h1>Pokémon: Leyendas de Astur</h1><p>Una aventura original por Gijón y la costa cantábrica</p></div><span class="version">EDICIÓN 10.0 · GRAN AVENTURA</span></header>
+<header><div><h1>Pokémon: Leyendas de Astur</h1><p>Una aventura original por Gijón y la costa cantábrica</p></div><span class="version">EDICIÓN 11.0 · SPRITES HD</span></header>
 <div class="layout"><section class="panel game-panel"><div class="screen-wrap"><canvas id="map" width="640" height="448" aria-label="Mapa pixel art de Gijón"></canvas></div><div class="hud"><span id="zoneLabel">📍 Centro de Gijón</span><span id="timeLabel">AVENTURA · DÍA</span></div><div class="controls"><div class="dpad" aria-label="Controles de movimiento"><button class="up" data-dir="0,-1" aria-label="Arriba">▲</button><button class="left" data-dir="-1,0" aria-label="Izquierda">◀</button><button class="down" data-dir="0,1" aria-label="Abajo">▼</button><button class="right" data-dir="1,0" aria-label="Derecha">▶</button></div><div class="action-buttons"><button id="interact" class="gold">A · Acción</button><button id="save" class="secondary">Guardar</button></div></div><div class="small" style="text-align:center;color:#55716b;margin-top:8px">También puedes usar las flechas o WASD en ordenador. Pulsa A para hablar, investigar y entrar.</div></section>
-<aside class="side"><div class="panel"><h2>ENTRENADOR</h2><div id="trainerInfo" class="small"></div></div><div class="panel"><h2>OBJETIVO ACTUAL</h2><div id="objective" class="small"></div></div><div class="panel wide"><h2>EQUIPO POKÉMON</h2><div id="team" class="small">Todavía no tienes Pokémon.</div></div><div class="panel wide"><h2>DIARIO DE AVENTURA</h2><div id="log" class="log">¡Bienvenido a Gijón! Busca a la profesora Xana en el laboratorio.</div></div><div class="panel wide"><h2>MENÚ DE AVENTURA</h2><div class="quick"><button id="pokedex">📖 Pokédex</button><button id="mapBtn">🗺️ Zonas</button><button id="heal">💚 Curar</button><button id="quests">📜 Misiones</button><button id="bag">🎒 Mochila</button><button id="teamBtn">⭐ Equipo</button><button id="challengeBtn">⚔️ Retos</button></div><div id="progress" class="small" style="margin-top:8px"></div></div></aside></div><div style="text-align:center;color:#c5e0dc;font-size:10px;padding:10px">LEYENDAS DE ASTUR · v10.0 · Guardado local · Diseñado para iPad y ordenador</div></main>
+<aside class="side"><div class="panel"><h2>ENTRENADOR</h2><div id="trainerInfo" class="small"></div></div><div class="panel"><h2>OBJETIVO ACTUAL</h2><div id="objective" class="small"></div></div><div class="panel wide"><h2>EQUIPO POKÉMON</h2><div id="team" class="small">Todavía no tienes Pokémon.</div></div><div class="panel wide"><h2>DIARIO DE AVENTURA</h2><div id="log" class="log">¡Bienvenido a Gijón! Busca a la profesora Xana en el laboratorio.</div></div><div class="panel wide"><h2>MENÚ DE AVENTURA</h2><div class="quick"><button id="pokedex">📖 Pokédex</button><button id="mapBtn">🗺️ Zonas</button><button id="heal">💚 Curar</button><button id="quests">📜 Misiones</button><button id="bag">🎒 Mochila</button><button id="teamBtn">⭐ Equipo</button><button id="challengeBtn">⚔️ Retos</button></div><div id="progress" class="small" style="margin-top:8px"></div></div></aside></div><div style="text-align:center;color:#c5e0dc;font-size:10px;padding:10px">LEYENDAS DE ASTUR · v11.0 · Guardado local · Diseñado para iPad y ordenador</div></main>
 <div class="modal" id="starterModal"><div class="dialog"><h2>La profesora Xana</h2><p>«La costa asturiana guarda especies extraordinarias. La región necesita un nuevo investigador. Elige a tu compañero y comienza tu aventura.»</p><div class="startergrid"><button data-starter="Brasegu"><span class="emoji">🦊</span><b>Brasegu</b><small>Fuego · Equilibrado</small></button><button data-starter="Llobín"><span class="emoji">🦦</span><b>Llobín</b><small>Agua · Resistente</small></button><button data-starter="Carbayu"><span class="emoji">🦔</span><b>Carbayu</b><small>Planta · Defensivo</small></button></div></div></div>
 <div class="modal" id="battleModal"><div class="dialog"><h2 id="battleTitle">¡Un Pokémon salvaje!</h2><div class="battlefield"><div class="mon enemy"><div class="moninfo"><b id="wildName">Pokémon</b><div id="wildLevel">Nv. 2</div><div class="hpwrap"><div class="hp" id="wildHp"></div></div></div><div class="sprite" id="wildSprite">🐦</div></div><div class="mon hero"><div class="sprite" id="heroSprite">🦊</div><div class="moninfo"><b id="heroName">Brasegu</b><div id="heroLevel">Nv. 5</div><div class="hpwrap"><div class="hp" id="heroHp"></div></div></div></div></div><div id="battleText" class="small" style="margin-top:9px;min-height:35px">¡Prepárate!</div><div class="moves" id="moves"></div><div class="battle-actions"><button id="ball" class="gold">🎯 Poké Ball × <span id="balls">5</span></button><button id="run" class="secondary">Huir</button></div></div></div>
 <div class="modal" id="infoModal"><div class="dialog"><button class="close" id="closeInfo">Cerrar ✕</button><h2 id="infoTitle">Pokédex</h2><div id="infoBody" class="small" style="margin-top:12px"></div></div></div>
@@ -42,34 +42,100 @@ let zone='Gijón',player={x:5,y:7},starter=null,balls=5,team=[],seen=[],wild=nul
 
 function creaturePalette(name){
  const palettes={
-  Fuego:['#e65b38','#ffb34c','#783b35'],Agua:['#398fc0','#9ce4e8','#24546f'],
-  Planta:['#4b9a55','#b8dc70','#315b3d'],Eléctrico:['#e5c43e','#fff29a','#8a6d24'],
-  Volador:['#8b9ed0','#e5e9f5','#505d8d'],Tierra:['#b47b49','#e4c08a','#63472f'],
-  Fantasma:['#8065a8','#c7b2e6','#43345f'],Dragón:['#4c9a83','#a7dfb7','#285c52'],
-  Roca:['#888477','#c9c1a5','#4e4b43'],Normal:['#a78e78','#e3cbb2','#655447']
+  Fuego:['#e85a35','#ffbd58','#7c302b'],Agua:['#378fc2','#a8e9ed','#20536f'],
+  Planta:['#4e9b55','#c1e27b','#315b39'],Eléctrico:['#e6c33e','#fff3a1','#806321'],
+  Volador:['#899fd1','#edf0fa','#4e5b86'],Tierra:['#b77b49','#e8c18b','#64432e'],
+  Fantasma:['#8067ad','#d0b9ec','#41315f'],Dragón:['#4b9d84','#a9e2bd','#28594d'],
+  Roca:['#898477','#d0c7aa','#4c4941'],Normal:['#ad8c73','#ead1b6','#604b3d'],
+  Psíquico:['#c477b4','#f4c8e9','#70416e']
  };
  return palettes[(species[name]||{}).type]||palettes.Normal;
 }
 function paintCreature(el,name){
  if(!el)return;
- const c=document.createElement('canvas');c.width=32;c.height=28;c.className='pixel-creature';c.setAttribute('aria-label','Sprite pixel art de '+name);
+ const c=document.createElement('canvas');c.width=60;c.height=52;c.className='pixel-creature';c.setAttribute('aria-label','Sprite pixel art HD de '+name);
  const g=c.getContext('2d');const [base,light,dark]=creaturePalette(name);
- const px=(x,y,w,h,col)=>{g.fillStyle=col;g.fillRect(x,y,w,h)};
- // Silhouette with a distinct head, body, ears/horns, feet and highlights.
- px(9,10,14,12,dark);px(10,8,12,14,base);px(12,5,9,9,base);
- px(10,6,4,5,dark);px(19,5,4,5,dark);px(12,8,3,3,light);px(18,8,3,3,light);
- px(13,11,2,2,'#172d35');px(19,11,2,2,'#172d35');
- px(13,17,7,3,light);px(8,20,5,3,dark);px(20,20,5,3,dark);
- px(11,23,4,3,dark);px(19,23,4,3,dark);
- // Tail/crest variations based on a stable name hash.
- let h=0;for(const ch of name)h=(h*31+ch.charCodeAt(0))>>>0;
- if(h%3===0){px(23,14,5,4,base);px(26,12,3,3,light)}
- else if(h%3===1){px(5,7,5,5,base);px(4,5,4,3,light)}
- else {px(14,2,5,4,light);px(15,0,3,3,dark)}
- px(14,13,2,2,'#fff');px(20,13,2,2,'#fff');
+ const p=(x,y,w,h,col)=>{g.fillStyle=col;g.fillRect(x,y,w,h)};
+ const line=(pts,col)=>pts.forEach(([x,y,w,h])=>p(x,y,w,h,col));
+ // Sombra y silueta: cada familia tiene anatomía y accesorios propios.
+ p(10,46,40,4,'#263b3a55');
+ const type=(species[name]||{}).type;
+ const fox=['Brasegu','Brasafur','Focicu'].includes(name);
+ const otter=['Llobín','Llobravo','Llobardo','Llastresu'].includes(name);
+ const hedgehog=['Carbayu','Carbayón','Carbafor','Castañeru'].includes(name);
+ const bird=['Marigüín','Raitán','Ventolín','Orbayín','Campanín','Xiblata'].includes(name);
+ const aquatic=['Pixarra','Salporín','Orbayu','Burbuxu','Cangrexu'].includes(name);
+ const ghost=['Faruco','Trasguín','Nubrina'].includes(name);
+ const dragon=['Cuélebrin','Rexón','Escamplu','Llobecornu'].includes(name);
+ if(fox){
+  // Cola grande de zorro y punta de fuego, orejas puntiagudas y hocico.
+  line([[36,27,12,8],[42,21,8,9],[48,15,7,8],[51,10,6,7]],dark);
+  line([[45,16,8,6],[50,10,6,6]],base);p(53,8,5,5,light);
+  line([[13,18,8,13],[17,10,6,11],[31,10,6,11]],dark);
+  line([[15,18,6,9],[19,12,3,7],[32,13,3,7]],base);
+  p(15,23,29,19,dark);p(18,20,25,21,base);p(21,16,18,15,base);
+  p(24,30,15,9,light);p(35,28,11,6,light);p(37,29,8,3,'#fff0d5');
+  p(23,21,4,4,'#172d35');p(35,21,4,4,'#172d35');p(24,21,2,2,'#fff');p(36,21,2,2,'#fff');
+  p(21,39,7,7,dark);p(35,39,7,7,dark);p(19,44,9,3,'#eee0c7');p(34,44,9,3,'#eee0c7');
+  p(18,12,3,4,light);p(32,14,3,4,light);
+ }else if(otter){
+  // Nutria compacta, hocico claro, patas palmeadas y cola acuática.
+  p(5,32,14,7,dark);p(4,35,12,6,base);p(10,29,13,10,base);
+  p(15,24,31,17,dark);p(18,21,26,18,base);p(20,18,22,13,base);
+  p(24,29,17,10,light);p(39,24,10,8,light);p(45,26,7,5,dark);
+  p(24,18,4,4,dark);p(38,18,4,4,dark);p(25,19,2,2,light);p(39,19,2,2,light);
+  p(27,25,3,3,'#172d35');p(39,25,3,3,'#172d35');p(31,30,7,3,dark);
+  p(20,38,8,7,dark);p(36,38,8,7,dark);p(17,43,12,3,light);p(34,43,12,3,light);
+  p(8,28,6,3,light);p(3,26,5,2,light);
+ }else if(hedgehog){
+  // Erizo redondeado con púas-hoja y bellota central.
+  line([[13,23,7,12],[17,15,6,10],[24,10,7,10],[32,9,7,11],[40,14,7,10],[45,22,6,10]],dark);
+  line([[16,20,6,10],[24,13,6,9],[33,13,6,8],[41,19,6,8]],base);
+  p(13,25,34,17,dark);p(16,22,29,18,base);p(19,25,23,12,light);
+  p(39,28,11,8,light);p(47,31,5,4,dark);p(44,30,3,3,'#172d35');
+  p(23,28,4,4,'#172d35');p(24,28,2,2,'#fff');p(35,28,4,4,'#172d35');p(36,28,2,2,'#fff');
+  p(27,35,9,8,'#9a6337');p(29,32,5,4,'#6c9a43');p(30,30,3,4,'#b7d66b');
+  p(18,39,8,7,dark);p(37,39,8,7,dark);p(16,44,11,3,light);p(35,44,11,3,light);
+ }else if(bird){
+  // Ave cantábrica con alas escalonadas, pico y patas.
+  p(8,24,15,12,dark);p(12,20,16,15,base);p(21,17,18,18,base);p(31,15,13,13,base);
+  line([[9,25,10,5],[5,21,9,5],[3,17,8,5]],dark);line([[8,24,9,4],[5,21,8,3]],light);
+  p(39,20,10,8,light);p(48,23,8,4,'#d99b43');p(53,24,5,2,dark);
+  p(34,18,3,3,dark);p(35,18,2,2,'#fff');p(18,34,5,9,dark);p(31,34,5,9,dark);
+  p(14,43,12,3,'#d5a34d');p(29,43,12,3,'#d5a34d');p(22,27,12,7,light);
+ }else if(aquatic){
+  // Cuerpo hidrodinámico, aletas y brillos de agua.
+  p(7,25,10,9,dark);p(3,20,10,18,base);p(12,19,31,19,dark);p(16,21,25,14,base);
+  p(38,23,11,10,light);p(45,19,9,7,base);p(48,28,9,7,base);p(17,17,9,6,light);
+  p(24,25,4,4,'#172d35');p(25,25,2,2,'#fff');p(37,25,4,4,'#172d35');p(38,25,2,2,'#fff');
+  p(22,34,13,3,light);p(18,38,8,4,dark);p(34,38,8,4,dark);p(9,14,5,3,'#b5eaf0');p(3,10,4,3,'#b5eaf0');
+ }else if(ghost){
+  // Espíritu flotante con capa ondulada y ojos luminosos.
+  p(17,15,27,8,dark);p(12,21,38,18,dark);p(16,15,30,23,base);p(19,11,23,13,base);
+  p(20,17,8,7,light);p(33,17,8,7,light);p(21,22,5,6,'#fff');p(34,22,5,6,'#fff');
+  p(23,23,3,5,'#35284a');p(36,23,3,5,'#35284a');p(27,31,9,3,dark);
+  line([[15,36,8,7],[27,37,7,8],[39,36,8,7]],base);p(18,43,6,4,light);p(31,44,5,4,light);p(43,42,5,4,light);
+ }else if(dragon){
+  // Reptil/dragón con cuernos, alas y cola articulada.
+  line([[36,28,9,7],[43,31,8,7],[49,34,6,5]],dark);p(50,31,6,5,light);
+  line([[14,23,8,9],[8,18,8,7],[4,13,7,6]],dark);line([[37,23,8,9],[44,18,8,7],[49,13,7,6]],dark);
+  p(15,24,31,17,dark);p(18,21,26,17,base);p(25,15,18,15,base);p(28,28,13,9,light);
+  p(28,12,4,7,light);p(39,12,4,7,light);p(30,17,3,3,'#172d35');p(41,17,3,3,'#172d35');
+  p(21,38,8,8,dark);p(38,38,8,8,dark);p(18,44,12,3,light);p(36,44,12,3,light);
+  p(21,25,5,4,light);p(37,25,5,4,light);
+ }else{
+  // Silueta propia de las familias restantes: cuerpo, cresta, extremidades y marcas.
+  p(12,26,36,15,dark);p(16,21,29,18,base);p(22,15,20,14,base);
+  p(19,18,5,8,dark);p(39,18,5,8,dark);p(21,22,4,4,'#172d35');p(38,22,4,4,'#172d35');
+  p(24,29,16,7,light);p(17,38,9,7,dark);p(37,38,9,7,dark);p(15,44,13,3,light);p(35,44,13,3,light);
+  const seed=[...name].reduce((a,ch)=>a+ch.charCodeAt(0),0)%4;
+  if(seed===0){p(9,23,9,8,base);p(5,18,7,7,light)}else if(seed===1){p(39,12,6,10,light);p(44,9,6,7,dark)}else if(seed===2){p(22,8,7,10,light);p(29,5,6,9,dark)}else{p(7,30,9,7,light);p(3,26,7,6,dark)}
+ }
+ // Brillos, contorno de suelo y detalle de especie.
+ p(15,48,30,1,'#fff7d0');
  el.replaceChildren(c);
 }
-
+document.querySelectorAll('[data-starter] .emoji').forEach(el=>paintCreature(el,el.parentElement.dataset.starter));
 function log(t){$('log').textContent=t}function makeMon(name,level){const s=species[name],max=30+level*6;return{name,level,type:s.type,emoji:s.emoji,moves:s.moves.map(m=>[...m]),hp:max,maxHp:max,xp:0}}
 function update(){ $('trainerInfo').innerHTML=`<div class="statline"><span>Zona</span><b>${zones[zone].label}</b></div><div class="statline"><span>Medallas</span><b>${medals}/2</b></div><div class="statline"><span>Poké Balls</span><b>${balls}</b></div><div class="statline"><span>Pokémon</span><b>${team.length}/6</b></div>`;$('objective').textContent=!starter?'Habla con Xana en el laboratorio, al norte del centro.':!medals?'Explora las seis zonas, captura Pokémon y entrena para el gimnasio de Cimavilla.':'¡Medalla del Cantábrico conseguida! Completa las misiones de investigación.';$('team').innerHTML=team.length?team.map(p=>`<div class="teamrow"><b>${(species[p.name]||{emoji:'❔'}).emoji} ${p.name} · Nv.${p.level}</b><span>${p.hp}/${p.maxHp} PS · ${p.xp} EXP</span></div>`).join(''):'Todavía no tienes Pokémon.';$('progress').innerHTML=`Zonas visitadas: ${[...visited].join(' · ')}<br>Pokémon registrados: ${new Set([...seen,...team.map(p=>p.name)]).size}<div class="progressbar"><i style="width:${visited.size/6*100}%"></i></div>Exploración: ${visited.size}/6 zonas`;$('zoneLabel').textContent='📍 '+zones[zone].label;draw()}
 function rand(n){return Math.abs(Math.sin(n*127.1+zone.length*19.7)*43758.5453)%1}
