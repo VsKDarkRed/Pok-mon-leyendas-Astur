@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#102f3b"><meta name="application-name" content="Pokémon: Leyendas de Astur V50"><meta name="app-version" content="50.0">
-<title>Pokémon: Leyendas de Astur · V50 oficial</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#102f3b"><meta name="application-name" content="Pokémon: Leyendas de Astur V50"><meta name="app-version" content="51.0">
+<title>Pokémon: Leyendas de Astur · V51 oficial</title>
 <style>
 :root{--navy:#102f3b;--deep:#09232d;--teal:#1d6470;--cream:#f5efd9;--gold:#efc66c;--ink:#183942;--mint:#cce5d0}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(ellipse at top,#235563,#0a2630 72%);color:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overscroll-behavior:none}body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}main{max-width:1180px;margin:auto;padding:12px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:4px 2px 12px}h1{font-size:clamp(22px,4vw,34px);line-height:1.05;margin:0;letter-spacing:.2px;text-shadow:0 3px 0 #071b22}header p{margin:5px 0 0;color:#c8e2dc;font-size:13px}.version{background:#e9c66d;color:#273e3a;border-radius:30px;padding:6px 11px;font-size:11px;font-weight:900;letter-spacing:.5px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:12px}.panel{background:var(--cream);color:var(--ink);border:3px solid #38666a;border-radius:14px;padding:10px;box-shadow:0 5px 0 #061a21,0 10px 24px #061a2144}.game-panel{padding:9px}.screen-wrap{position:relative;overflow:hidden;border:3px solid #234e55;border-radius:9px;background:#7dbb83}canvas{display:block;width:100%;height:auto;aspect-ratio:640/448;image-rendering:pixelated;touch-action:none;user-select:none;-webkit-user-select:none}.hud{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:#d8eee5;font-size:11px;font-weight:800;padding:7px 2px 0}.controls{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:10px}.dpad{display:grid;grid-template-columns:46px 46px 46px;grid-template-rows:40px 40px 40px;gap:3px;touch-action:manipulation}.dpad button{padding:0;font-size:18px}.up{grid-column:2}.left{grid-column:1;grid-row:2}.down{grid-column:2;grid-row:2}.right{grid-column:3;grid-row:2}.action-buttons{display:flex;gap:7px;flex-wrap:wrap;justify-content:center}button{border:0;border-radius:9px;background:linear-gradient(#2b7580,#1b5662);color:white;font-weight:850;font-size:13px;padding:11px 13px;box-shadow:0 3px 0 #10343c;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;cursor:pointer}button:active{transform:translateY(2px);box-shadow:0 1px 0 #10343c}button.secondary{background:linear-gradient(#e6eddf,#cbdcc9);color:#183942;box-shadow:0 3px 0 #93aa9a}button.gold{background:linear-gradient(#f4d783,#d8a943);color:#3c3825;box-shadow:0 3px 0 #a17a30}.side{display:flex;flex-direction:column;gap:10px}.side h2{font-size:14px;margin:0 0 7px;color:#17434b;letter-spacing:.3px}.small{font-size:12px;line-height:1.5}.statline{display:flex;justify-content:space-between;border-bottom:1px solid #d7d8c8;padding:4px 0}.teamrow{display:flex;justify-content:space-between;gap:5px;border-bottom:1px solid #d7d8c8;padding:6px 0;font-size:11px}.teamrow:last-child{border:0}.log{background:#fff9e9;border:1px solid #e2d9bb;border-radius:8px;padding:9px;min-height:68px;font-size:12px;line-height:1.45}.progressbar{height:8px;background:#d3d9ca;border-radius:8px;overflow:hidden;margin-top:5px}.progressbar i{display:block;height:100%;background:#4c9a68}.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.quick button{padding:9px 5px;font-size:11px;min-height:42px}.quick button:disabled{opacity:.48;filter:grayscale(.7)}.modal{display:none;position:fixed;inset:0;z-index:20;background:#061820eF;align-items:center;justify-content:center;padding:14px}.modal.show{display:flex}.dialog{width:min(600px,100%);max-height:92dvh;overflow:auto;background:var(--cream);color:var(--ink);border:4px solid #37666b;border-radius:16px;padding:16px;box-shadow:0 15px 50px #0008}.dialog h2{font-size:21px;margin:0 0 7px}.dialog p{font-size:13px;line-height:1.5}.startergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.startergrid button{background:#e4eddf;color:#173b40;border:2px solid #a9c3aa;box-shadow:none;padding:12px 5px}.startergrid .emoji{display:block;font-size:38px;min-height:76px}.startergrid .emoji 
 /* v14: acabado GBA, movimiento y feedback */
@@ -233,9 +233,66 @@ body.v49-large-controls button,body.v49-large-controls .btn,body.v49-large-contr
 @media(max-width:430px){.v50-panel{padding:12px}.v50-grid{grid-template-columns:1fr}}
 </style>
 
+
+<style id="astur-v51-interface">
+/* V51 — interfaz inmersiva basada en la V50 oficial */
+:root{--v51-glass:rgba(7,27,37,.84);--v51-line:rgba(231,239,224,.22);--v51-gold:#efc66c}
+html,body{width:100%;height:100%;min-height:100%;margin:0;overflow:hidden;overscroll-behavior:none}
+body{padding:0!important;background:#071923}
+main{position:relative;width:100%;max-width:none;height:100vh;height:100dvh;min-height:0;margin:0;padding:0;display:flex;flex-direction:column;overflow:hidden}
+header{position:absolute;z-index:10;top:env(safe-area-inset-top,0px);left:0;right:0;min-height:0;padding:9px 174px 8px 12px;display:flex;align-items:flex-start;justify-content:flex-start;pointer-events:none;background:linear-gradient(180deg,rgba(4,20,29,.76),rgba(4,20,29,.24),transparent)}
+header>div{min-width:0}
+header h1{font-size:clamp(13px,2.1vw,19px);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 5px #000;margin:0}
+header p{display:none}
+.version{display:none}
+.layout{display:block;position:relative;flex:1;width:100%;height:100%;min-height:0;min-width:0}
+.game-panel{position:absolute;inset:0;display:flex;flex-direction:column;min-height:0;min-width:0;padding:0;border:0;border-radius:0;background:#071923;box-shadow:none}
+.screen-wrap{position:relative;flex:1;min-height:0;min-width:0;width:100%;height:100%;border:0;border-radius:0;overflow:hidden;background:#102c37}
+canvas{display:block;width:100%;height:100%;max-height:none;aspect-ratio:auto;object-fit:contain;image-rendering:pixelated;touch-action:none;user-select:none;-webkit-user-select:none}
+.hud{position:absolute;z-index:8;top:calc(env(safe-area-inset-top,0px) + 43px);left:10px;right:10px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:6px 10px;border:1px solid var(--v51-line);border-radius:10px;background:var(--v51-glass);color:#f4f1df;font-size:11px;font-weight:800;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);pointer-events:none}
+.controls{position:absolute;z-index:9;left:10px;right:10px;bottom:calc(env(safe-area-inset-bottom,0px) + 10px);display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:nowrap;margin:0;pointer-events:none}
+.dpad{pointer-events:auto;display:grid;grid-template-columns:clamp(38px,6vw,52px) clamp(38px,6vw,52px) clamp(38px,6vw,52px);grid-template-rows:clamp(34px,5.5vw,46px) clamp(34px,5.5vw,46px) clamp(34px,5.5vw,46px);gap:3px;padding:5px;border:1px solid var(--v51-line);border-radius:14px;background:var(--v51-glass);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);touch-action:manipulation}
+.dpad button{min-width:0;min-height:0;padding:0;border:1px solid #ffffff35;border-radius:9px;background:linear-gradient(180deg,#39717e,#174451);color:white;font-size:17px;box-shadow:0 2px 0 #06151c}
+.action-buttons{pointer-events:auto;display:flex;flex-direction:column;align-items:stretch;gap:7px;max-width:132px}
+.action-buttons button{min-width:90px;min-height:42px;padding:8px 12px;border:1px solid #ffffff40;box-shadow:0 3px 0 #06151c}
+.pause44{position:fixed;z-index:35;top:calc(env(safe-area-inset-top,0px) + 8px);right:10px;min-height:34px;padding:7px 11px;font-size:11px;box-shadow:0 2px 8px #0007}
+#asturMenu51{position:fixed;z-index:35;top:calc(env(safe-area-inset-top,0px) + 8px);right:86px;min-height:34px;padding:7px 11px;border:1px solid #ffffff45;border-radius:9px;background:#153e4b;color:#fff;font-size:11px;box-shadow:0 2px 8px #0007}
+#asturMenuShade51{display:none;position:fixed;z-index:39;inset:0;background:#020b10a8;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+.side{display:none;position:fixed;z-index:40;top:0;right:0;bottom:0;width:min(420px,94vw);max-height:100dvh;overflow:auto;overscroll-behavior:contain;padding:calc(env(safe-area-inset-top,0px) + 54px) 12px calc(env(safe-area-inset-bottom,0px) + 14px);background:rgba(7,27,37,.98);border-left:1px solid var(--v51-line);box-shadow:-18px 0 45px #0008;gap:10px;align-content:start}
+body.astur-menu-open51 #asturMenuShade51{display:block}
+body.astur-menu-open51 .side{display:grid;grid-template-columns:1fr}
+.side .panel{margin:0;min-width:0;background:#f5efd9;color:#183942;border:1px solid #52747a;border-radius:11px;box-shadow:none;padding:11px}
+.side .panel h2{font-size:12px;letter-spacing:.04em}
+.side .quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.side .quick button{min-width:0;min-height:43px;padding:8px 6px;font-size:11px}
+#asturMenuClose51{position:fixed;z-index:42;top:calc(env(safe-area-inset-top,0px) + 8px);right:12px;display:none;min-height:34px;padding:7px 11px;background:var(--v51-gold);color:#243c3e;border:0;border-radius:9px}
+body.astur-menu-open51 #asturMenuClose51{display:block}
+body.astur-menu-open51 #asturMenu51{display:none}
+main>div[style*="LEYENDAS DE ASTUR"]{display:none!important}
+.modal{z-index:60}
+.dialog{max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain}
+#zoneToast{pointer-events:none}
+@media(orientation:landscape) and (max-height:560px){
+ header{padding-top:5px;padding-bottom:4px}
+ header h1{font-size:14px}
+ .hud{top:calc(env(safe-area-inset-top,0px) + 34px);padding:4px 8px}
+ .controls{bottom:calc(env(safe-area-inset-bottom,0px) + 5px)}
+ .dpad{grid-template-columns:36px 36px 36px;grid-template-rows:29px 29px 29px;padding:4px}
+ .action-buttons button{min-height:35px;padding:5px 8px}
+}
+@media(orientation:portrait) and (max-width:600px){
+ .hud{top:calc(env(safe-area-inset-top,0px) + 42px)}
+ .controls{left:8px;right:8px;bottom:calc(env(safe-area-inset-bottom,0px) + 9px)}
+ .dpad{grid-template-columns:40px 40px 40px;grid-template-rows:36px 36px 36px}
+ .action-buttons{max-width:116px}
+ .action-buttons button{min-width:82px;min-height:42px;font-size:12px}
+}
+@media(pointer:coarse){.dpad button{touch-action:manipulation}}
+</style>
+
 </head>
 <body><button class="gold pause44" id="pause44Btn" type="button">Ⅱ Pausa</button><main>
-<header><div><h1>Pokémon: Leyendas de Astur</h1><p>Una aventura RPG por Asturias · mundo vivo, animaciones y combates por turnos</p></div><span class="version">VERSIÓN OFICIAL · V50</span></header>
+<header><div><h1>Pokémon: Leyendas de Astur</h1><p>Una aventura RPG por Asturias · mundo vivo, animaciones y combates por turnos</p></div><span class="version">VERSIÓN OFICIAL · V51</span></header>
 <div class="layout"><section class="panel game-panel"><div class="screen-wrap"><canvas id="map" width="640" height="448" aria-label="Mapa pixel art de Gijón"></canvas><div id="zoneToast" class="zone-toast">ASTUR</div></div><div class="hud"><span id="zoneLabel">📍 Centro de Gijón</span><span id="timeLabel">AVENTURA · DÍA</span></div><div class="controls"><div class="dpad" aria-label="Controles de movimiento"><button class="up" data-dir="0,-1" aria-label="Arriba">▲</button><button class="left" data-dir="-1,0" aria-label="Izquierda">◀</button><button class="down" data-dir="0,1" aria-label="Abajo">▼</button><button class="right" data-dir="1,0" aria-label="Derecha">▶</button></div><div class="action-buttons"><button id="interact" class="gold">A · Acción</button><button id="save" class="secondary">Guardar</button></div></div><div class="small" style="text-align:center;color:#55716b;margin-top:8px">También puedes usar las flechas o WASD en ordenador. Pulsa A para hablar, investigar y entrar.</div>
 <div class="controller41" id="controller41">
  <div><b>🎮 Controles multiplataforma · v47</b></div>
@@ -252,7 +309,7 @@ body.v49-large-controls button,body.v49-large-controls .btn,body.v49-large-contr
  </div>
  <div class="controller43 small" id="hapticStatus43">Vibración: se activará solo si el dispositivo y el mando la admiten.</div>
 </div></section>
-<aside class="side"><div class="panel"><h2>ENTRENADOR</h2><div id="trainerInfo" class="small"></div></div><div class="panel"><h2>OBJETIVO ACTUAL</h2><div id="objective" class="small"></div></div><div class="panel wide"><h2>EQUIPO POKÉMON</h2><div id="team" class="small">Todavía no tienes Pokémon.</div></div><div class="panel wide"><h2>DIARIO DE AVENTURA</h2><div id="log" class="log">¡Bienvenido a Gijón! Busca a la profesora Xana en el laboratorio.</div></div><div class="panel wide"><h2>MENÚ DE AVENTURA</h2><div class="quick"><button id="pokedex">📖 Pokédex</button><button id="mapBtn">🗺️ Zonas</button><button id="heal">💚 Curar</button><button id="quests">📜 Misiones</button><button id="bag">🎒 Mochila</button><button id="teamBtn">⭐ Equipo</button><button id="gearBtn">🎽 Equipar</button><button id="berryBtn">🫐 Bayas</button><button id="craftBtn">🔨 Taller</button><button id="styleBtn">🧢 Entrenador</button><button id="breedingBtn">🥚 Criadero</button><button id="competitionBtn">🏅 Torneos</button><button id="legendaryBtn">🐉 Liga legendaria</button><button id="seaBtn">⛵ Barco y buceo</button><button id="seasonBtn">🍂 Estaciones y festivales</button><button id="peopleBtn">🤝 Reputación y compañeros</button><button id="occidentBtn">🗺️ Valle del Occidente</button><button id="homeBtn">🏡 Vivienda y refugios</button><button id="albumBtn">📖 Álbum de recuerdos</button><button id="pairBtn">⚔️ Combate por parejas</button><button id="newGymsBtn">🏅 Gimnasios nuevos</button><button id="tournamentBtn">🎣 Torneos y arqueología</button><button id="styleAltBtn">🎨 Apariencia</button><button id="achievementBtn">🏅 Logros</button><button id="league37Btn">🏆 Alto Mando</button><button id="rival37Btn">⚔️ Rival</button><button id="nursery37Btn">🥚 Crianza</button><button id="swap37Btn">🔄 Orden equipo</button><button id="ng37Btn">✨ Nueva Partida+</button><button id="double38Btn">⚔️ Combate doble</button><button id="travel39Btn">🧭 Viaje rápido</button><button id="slots39Btn">💾 Ranuras</button><button id="quest39Btn">📜 Decisión del puente</button><button id="map40Btn">🗺️ Mapa ilustrado</button><button id="gym40Btn">🏟️ Estrategias</button><button id="chapter40Btn">📖 Historia</button><button id="secret38Btn">🌌 Santuario secreto</button><button id="caveBtn">💎 Cuevas y niveles</button><button id="challengeBtn">⚔️ Retos</button><button id="gymBtn">🏆 Gimnasio</button><button id="rivalBtn">🧢 Rival</button><button id="shopBtn">🛒 Tienda</button></div><div id="progress" class="small" style="margin-top:8px"></div></div></aside></div><div style="text-align:center;color:#c5e0dc;font-size:10px;padding:10px">LEYENDAS DE ASTUR · V50 OFICIAL · Guardado local · Diseñado para iPad y ordenador</div></main>
+<aside class="side"><div class="panel"><h2>ENTRENADOR</h2><div id="trainerInfo" class="small"></div></div><div class="panel"><h2>OBJETIVO ACTUAL</h2><div id="objective" class="small"></div></div><div class="panel wide"><h2>EQUIPO POKÉMON</h2><div id="team" class="small">Todavía no tienes Pokémon.</div></div><div class="panel wide"><h2>DIARIO DE AVENTURA</h2><div id="log" class="log">¡Bienvenido a Gijón! Busca a la profesora Xana en el laboratorio.</div></div><div class="panel wide"><h2>MENÚ DE AVENTURA</h2><div class="quick"><button id="pokedex">📖 Pokédex</button><button id="mapBtn">🗺️ Zonas</button><button id="heal">💚 Curar</button><button id="quests">📜 Misiones</button><button id="bag">🎒 Mochila</button><button id="teamBtn">⭐ Equipo</button><button id="gearBtn">🎽 Equipar</button><button id="berryBtn">🫐 Bayas</button><button id="craftBtn">🔨 Taller</button><button id="styleBtn">🧢 Entrenador</button><button id="breedingBtn">🥚 Criadero</button><button id="competitionBtn">🏅 Torneos</button><button id="legendaryBtn">🐉 Liga legendaria</button><button id="seaBtn">⛵ Barco y buceo</button><button id="seasonBtn">🍂 Estaciones y festivales</button><button id="peopleBtn">🤝 Reputación y compañeros</button><button id="occidentBtn">🗺️ Valle del Occidente</button><button id="homeBtn">🏡 Vivienda y refugios</button><button id="albumBtn">📖 Álbum de recuerdos</button><button id="pairBtn">⚔️ Combate por parejas</button><button id="newGymsBtn">🏅 Gimnasios nuevos</button><button id="tournamentBtn">🎣 Torneos y arqueología</button><button id="styleAltBtn">🎨 Apariencia</button><button id="achievementBtn">🏅 Logros</button><button id="league37Btn">🏆 Alto Mando</button><button id="rival37Btn">⚔️ Rival</button><button id="nursery37Btn">🥚 Crianza</button><button id="swap37Btn">🔄 Orden equipo</button><button id="ng37Btn">✨ Nueva Partida+</button><button id="double38Btn">⚔️ Combate doble</button><button id="travel39Btn">🧭 Viaje rápido</button><button id="slots39Btn">💾 Ranuras</button><button id="quest39Btn">📜 Decisión del puente</button><button id="map40Btn">🗺️ Mapa ilustrado</button><button id="gym40Btn">🏟️ Estrategias</button><button id="chapter40Btn">📖 Historia</button><button id="secret38Btn">🌌 Santuario secreto</button><button id="caveBtn">💎 Cuevas y niveles</button><button id="challengeBtn">⚔️ Retos</button><button id="gymBtn">🏆 Gimnasio</button><button id="rivalBtn">🧢 Rival</button><button id="shopBtn">🛒 Tienda</button></div><div id="progress" class="small" style="margin-top:8px"></div></div></aside></div><div style="text-align:center;color:#c5e0dc;font-size:10px;padding:10px">LEYENDAS DE ASTUR · V51 OFICIAL · Guardado local · Diseñado para iPad y ordenador</div></main>
 <div class="modal" id="starterModal"><div class="dialog"><h2>La profesora Xana</h2><p>«La costa asturiana guarda especies extraordinarias. La región necesita un nuevo investigador. Elige a tu compañero y comienza tu aventura.»</p><div class="startergrid"><button data-starter="Brasegu"><span class="emoji">🦊</span><b>Brasegu</b><small>Fuego · Equilibrado</small></button><button data-starter="Llobín"><span class="emoji">🦦</span><b>Llobín</b><small>Agua · Resistente</small></button><button data-starter="Carbayu"><span class="emoji">🦔</span><b>Carbayu</b><small>Planta · Defensivo</small></button></div></div></div>
 <div id="mainMenu47" class="mainmenu47"><div class="card"><h2>🌄 Pokémon: Leyendas de Astur</h2><p>Una aventura por Asturias. Elige cómo continuar.</p><div id="profile47" class="profile47">Perfil de entrenador: sin configurar</div><button id="continue47" class="gold">▶ Continuar partida</button><button id="new47" class="secondary">✨ Nueva partida</button><button id="profileEdit47" class="secondary">🧢 Perfil de entrenador</button><p id="menuInfo47" class="small"></p></div></div>
 <div class="modal" id="pause44Modal"><div class="dialog"><button class="close" id="pause44Close">Volver al juego ✕</button><h2>⏸️ Pausa</h2><p class="small">La aventura queda detenida mientras este menú está abierto.</p><div class="pause-grid44"><button id="pause44Bag">🎒 Inventario</button><button id="pause44Team">⭐ Equipo</button><button id="pause44Save">💾 Guardar partida</button><button id="pause44Controls">🎮 Controles</button></div><p id="pause44Status" class="small">Guardado automático activado.</p></div></div>
@@ -2966,6 +3023,38 @@ rotate();rankInfo();save();mount();
   const b=document.createElement('button');b.id='pause51Menu';b.textContent='🏠 Menú principal';pauseGrid.appendChild(b);
   b.addEventListener('click',()=>{try{if(typeof pause46==='function')pause46(false)}catch(e){}showMenu();refresh();});
  }
+})();
+</script>
+
+
+<script id="astur-v51-interface-js">
+(()=>{
+ 'use strict';
+ if(document.getElementById('asturMenu51')) return;
+ const side=document.querySelector('aside.side');
+ if(!side) return;
+ const shade=document.createElement('div');
+ shade.id='asturMenuShade51';
+ const menu=document.createElement('button');
+ menu.id='asturMenu51';menu.type='button';menu.textContent='☰ Menú';
+ menu.setAttribute('aria-label','Abrir menú de aventura');
+ menu.setAttribute('aria-expanded','false');
+ const close=document.createElement('button');
+ close.id='asturMenuClose51';close.type='button';close.textContent='Cerrar ✕';
+ close.setAttribute('aria-label','Cerrar menú de aventura');
+ document.body.append(shade,menu,close);
+ const setOpen=value=>{
+  document.body.classList.toggle('astur-menu-open51',value);
+  menu.setAttribute('aria-expanded',String(value));
+ };
+ menu.addEventListener('click',()=>setOpen(true));
+ close.addEventListener('click',()=>setOpen(false));
+ shade.addEventListener('click',()=>setOpen(false));
+ side.addEventListener('click',event=>{
+  const button=event.target.closest('button');
+  if(button && !button.closest('#v50Panel')) setOpen(false);
+ });
+ document.addEventListener('keydown',event=>{if(event.key==='Escape')setOpen(false)});
 })();
 </script>
 
